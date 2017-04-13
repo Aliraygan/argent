@@ -1,5 +1,5 @@
 --Begin Tools.lua :)
-local SUDO = 157059515 -- put Your ID here! <===
+local SUDO = 114900277 -- put Your ID here! <===
 function exi_files(cpath)
     local files = {}
     local pth = cpath
@@ -1163,7 +1163,7 @@ return chat_list(msg)
 	   tdcli.sendMessage(matches[2], 0, 1, "Group has been removed by admin command", 1, 'html')
     return '_Group_ *'..matches[2]..'* _removed_'
 		end
-if matches[1] == 'beyond' or matches[1] == 'بیوند' then
+if matches[1] == 'argentaliha' or matches[1] == 'ارجنت علیها' then
 return tdcli.sendMessage(msg.to.id, msg.id, 1, _config.info_text, 1, 'html')
     end
 if matches[1] == 'adminlist' or matches[1] == 'لیست ادمین' and is_admin(msg) then
@@ -1197,7 +1197,7 @@ if matches[1] == "helptools" or  matches[1] == "راهنما ابزار" and is_
 if not lang then
 text = [[
 
-_Sudoer And Admins Beyond Bot Help :_
+_Sudoer And Admins argent Bot Help :_
 
 *!visudo* `[username|id|reply]`
 _Add Sudo_
@@ -1309,7 +1309,7 @@ tdcli.sendMessage(msg.chat_id_, 0, 1, text, 1, 'md')
 else
 
 text = [[
-_راهنمای ادمین و سودو های ربات بیوند:_
+_راهنمای ادمین و سودو های ربات ارجنت:_
 
 *سودو* `[username|id|reply]`
 _اضافه کردن سودو_
@@ -1435,7 +1435,7 @@ command .. "([Aa]dminprom) (.*)$",
 command .. "([Aa]dmindem) (.*)$",
 command .. "([Ll]eave)$",
 command .. "([Aa]utoleave) (.*)$", 
-command .. "([Bb]eyond)$",
+command .. "([Aa]rgentaliha)$",
 command .. "([Cc]reategroup) (.*)$",
 command .. "([Cc]reatesuper) (.*)$",
 command .. "([Tt]osuper)$",
@@ -1548,7 +1548,7 @@ patterns_fa = {
     "^(ارسال) +(.*) (-%d+)$",
 	"^(افزودن) (-%d+)$",
 	"^(پاک کردن حافظه)$",
-	"^(بیوند)$",
+	"^(ارجنت علیها)$",
 },
 run = run, pre_process = pre_process
 }
